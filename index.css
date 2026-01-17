@@ -82,10 +82,10 @@ body {
 
 /* HERO */
 .hero {
-    background: url("./download.jpg") center/cover;
+    background: url("high-angle-decoration-with-cinnamon-sticks-hazelnuts-bowls.jpg") center/cover;
     color: white;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
 }
 
 /* CARD */
@@ -126,29 +126,43 @@ body {
 }
 
 .jenisjamucontainer {
-    width: 100vw;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap; /* PENTING */
     align-items: center;
-    justify-content: space-between;
-    padding: 100px;
+    justify-content: center;
+    gap: 2rem; /* jarak antar box */
+    padding: 2rem;
 }
 
+/* BOX JAMU */
 .jenis-jamu-box {
     width: 200px;
-    background-color: white;
     height: 200px;
+    background-color: white;
     border-radius: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5px;
-    box-shadow: 16px 12px 23px -6px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 16px 12px 23px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 16px 12px 23px -6px rgba(0, 0, 0, 0.75);
+
+    text-align: center;
+    text-decoration: none;
+
+    border: 0.5px solid black;
     color: #2e7d32;
+    font-weight: bold;
+
+    box-shadow: 16px 12px 23px -6px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* HOVER EFFECT */
+.jenis-jamu-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 20px 16px 30px -6px rgba(0, 0, 0, 0.45);
+}
+
 
 a {
     text-decoration: none;
